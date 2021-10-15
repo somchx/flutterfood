@@ -36,7 +36,7 @@ class _FoodDetailsState extends State<FoodDetails> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(('ชื่อเมนู: '+args.name),style: GoogleFonts.prompt(fontSize: 18.0),),
-                  Text(('ราคา: '+args.price.toString()),style: GoogleFonts.prompt(fontSize: 18.0),),
+                  Text(('ราคา: '+args.price.toString()+' บาท'),style: GoogleFonts.prompt(fontSize: 18.0),),
                 ],
               ),
             ),

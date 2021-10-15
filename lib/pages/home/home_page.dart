@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_food/helpers/platform_aware_asset_image.dart';
-import 'package:flutter_food/pages/food/food_main_page.dart';
+import 'package:flutter_food/pages/food/food_page.dart';
 import 'package:flutter_food/pages/profile/profile_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -35,6 +35,10 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(_pageDataList[_selectedDrawerItemIndex]['title'] as String),
+          actions: [
+          IconButton(onPressed:() {}, icon: Icon(Icons.search)),
+    IconButton(onPressed:(){}, icon: Icon(Icons.refresh)),
+    ]
       ),
       drawer: Drawer(
         child: ListView(
